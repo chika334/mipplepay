@@ -1,0 +1,52 @@
+.news {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news > div {
+  margin: 10px;
+  width: 100%;
+}
+                                                                             
+@media (min-width: 600px) {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+  .news {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .news > div {
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .secondtabs {
+    min-height: 150px;
+  }
+} 
+
+@media (max-width: 599px) {
+  .news {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .news > div {
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .secondtab {
+    min-height: 420px
+  }
+
+  .imgsBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
+  
+  .secondtabs {
+    min-height: 180px
+  }
+}
+

@@ -1,0 +1,36 @@
+.newthing {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newthing > div {
+  margin: 10px;
+  padding: 5px;
+  width: 100%;
+}
+                                                                                 
+@media (min-width: 600px) {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+  .newthing {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .newthing > div {
+    padding: 10px;
+    width: 100%;
+  }
+} 
+
+@media (max-width: 599px) {
+  .newthing {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .newthing > div {
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+
