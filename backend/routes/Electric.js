@@ -149,12 +149,12 @@ router.post('/postpaidMeterPayment', auth, async (req, res) => {
     
     const userId = await Wallet.findById(req.user.walletId)
     
-    if(userId.wallet < AmountInt) {
+    /*if(userId.wallet < AmountInt) {
         res.status(400).json({
             msg: "Wallet balance is low. please fund account"
         })
         return
-    } else {
+    } else {*/
         axios.post(`${process.env.postpaidMeterPayment}`, body, config)
             .then(res => {
                 console.log(res.data)
@@ -184,7 +184,7 @@ router.post('/postpaidMeterPayment', auth, async (req, res) => {
                     msg: "Below minimum amount allowed"
                 })
              })
-        }   
+        //}   
 })
     
 
